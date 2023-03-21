@@ -5,28 +5,12 @@
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 -->
 <html>
-	<head>
-		<title>Elements - Road Trip by TEMPLATED</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="./css/main.css" />
-	</head>
+	{{> title }}
 	<body class="subpage">
 
-		<!-- Header -->
-			<header id="header" class="alt">
-				<div class="logo"><a href="/">Road Trip <span>by TEMPLATED</span></a></div>
-				<a href="#menu"><span>Menu</span></a>
-			</header>
+		{{> header }}
 
-		<!-- Nav -->
-			<nav id="menu">
-				<ul class="links">
-					<li><a href="/">Home</a></li>
-					<li><a href="/generic">Generic</a></li>
-					<li><a href="/elements">Elements</a></li>
-				</ul>
-			</nav>
+		{{> nav }}
 
 		<!-- Main -->
 			<div id="main" class="container">
@@ -438,14 +422,14 @@
 								<h3>Preformatted</h3>
 								<pre><code>i = 0;
 
-while (!deck.isInOrder()) {
-    print 'Iteration ' + i;
-    deck.shuffle();
-    i++;
-}
+								while (!deck.isInOrder()) {
+									print 'Iteration ' + i;
+									deck.shuffle();
+									i++;
+								}
 
-print 'It took ' + i + ' iterations to sort the deck.';
-</code></pre>
+								print 'It took ' + i + ' iterations to sort the deck.';
+								</code></pre>
 
 						</div>
 					</div>
@@ -490,13 +474,7 @@ print 'It took ' + i + ' iterations to sort the deck.';
 				</div>
 			</footer>
 
-		<!-- Scripts -->
-			<script src="./js/jquery.min.js"></script>
-			<script src="./js/jquery.scrolly.min.js"></script>
-			<script src="./js/jquery.scrollex.min.js"></script>
-			<script src="./js/skel.min.js"></script>
-			<script src="./js/util.js"></script>
-			<script src="./js/main.js"></script>
+		{{> scripts }}
 
 	</body>
 </html>

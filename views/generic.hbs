@@ -5,35 +5,12 @@
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 -->
 <html>
-	<head>
-		<title>Generic - Road Trip by TEMPLATED</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="./css/main.css" />
-	</head>
+	{{> title }}
 	<body class="subpage">
 
-		<!-- Header -->
-			<header id="header" class="alt">
-				<div class="logo"><a href="/">Road Trip <span>by TEMPLATED</span></a></div>
-				<a href="#menu"><span>Menu</span></a>
-			</header>
+		{{> header}}
 
-		<!-- Nav -->
-			<nav id="menu">
-				<ul class="links">
-					<li><a href="/">Home</a></li>
-					<li><a href="/generic">Generic</a></li>
-					<li><a href="/elements">Elements</a></li>
-				</ul>
-			</nav>
-
-		<!-- Content -->
-		<!--
-			Note: To show a background image, set the "data-bg" attribute below
-			to the full filename of your image. This is used in each section to set
-			the background image.
-		-->
+		{{> nav }}
 			<section id="post" class="wrapper bg-img" data-bg="banner2.jpg">
 				<div class="inner">
 					<article class="box">
@@ -100,13 +77,7 @@
 				</div>
 			</footer>
 
-		<!-- Scripts -->
-			<script src="./js/jquery.min.js"></script>
-			<script src="./js/jquery.scrolly.min.js"></script>
-			<script src="./js/jquery.scrollex.min.js"></script>
-			<script src="./js/skel.min.js"></script>
-			<script src="./js/util.js"></script>
-			<script src="./js/main.js"></script>
+		{{> scripts }}
 
 	</body>
 </html>
